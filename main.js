@@ -1,43 +1,12 @@
-/*const add_to_cart = document.getElementsByClassName("big-button add-to-cart");
-add_to_cart[0].addEventListener('click', addToCart);
-
-
-
-function addToCart()
-{
-    add_to_cart.submit();
-    var cart_number_elem = document.getElementById("cart-number");
-    var cart_number = cart_number_elem.innerHTML;
-    cart_number++;
-
-    cart_number_elem.innerHTML = cart_number;
-    
-}
-    
-*/ 
-
-/*
-let cart_number_elem = document.getElementById("cart-number");
-
-console.log(cart_number_elem);
-
-const form = document.getElementById('form');
-
-form.addEventListener('submit', (event) => {
-   
-    const cart_number = form.elements.namedItem("quantity").value;
-    cart_number_elem.innerHTML = cart_number;
-   
-    
-    
-});
-*/ 
-
 //referenced from JS help session run by Steven Moore
-var productArray = [];
-const form = document.getElementById('form');
-var totalProducts = 0;
 
+//an array containing product data
+var productArray = [];
+var totalProducts = 0;
+//gets form data from product detail page
+const form = document.getElementById('form');
+
+//creates Product object with quantity & glaze information
 class Product{
     constructor(quantity, glaze) {
         this.quantity = quantity;
@@ -45,11 +14,13 @@ class Product{
     }
 }
 
+//called when add to cart button is pressed
 function addToCart()
 {
+    //gets the quantity of items selected from the form
     var quantity = form.elements.namedItem("quantity").value;
+    //adds the quantity selected to the total number of items in the cart
     totalProducts = Number(quantity) + Number(totalProducts);
-
-    document.getElementById("cart-number").innerHTML = totalProducts;
-   
+    //updates the number of items in the cart in the navbar
+    document.getElementById("cart-number").innerHTML = totalProducts;  
 }
