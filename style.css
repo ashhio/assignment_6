@@ -173,11 +173,26 @@ footer{
     text-align:left;
 }
 
+.flex{
+    display: flex;
+    
+}
+
+.col{
+    flex-flow: column wrap;
+    
+}
+
+.row{
+    flex-flow: row wrap;
+  
+    
+}
+
 .product-detail{
     margin-top: 60px;
     display:inline-block;
     width:85%;
-    min-width:1242px;
 }
 
 .product-detail-img{
@@ -190,7 +205,7 @@ footer{
     width: 440px;
     background-color: #F0F0F0;
     border-radius: 5px;
-    margin-top: 85px;
+ 
     padding:15px;
 }
 
@@ -216,4 +231,43 @@ footer{
 
 .p-margin{
     margin: 10%;
+}
+
+input[type=button]
+{
+   
+    font-family: 'Patrick Hand SC';
+}
+
+input[type=radio]
+{
+    visibility: hidden;
+
+  
+}
+
+input[type=radio]:not(:checked) + label{
+    font-size: 24px;
+    margin:10px;
+    padding: 0px 38px 2px 38px;
+    border-radius: 26px;
+    background-color: #EBEBEB;
+    border-color: #D6D6D6;
+    border-style: solid;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    font-family: 'Patrick Hand SC';
+  
+}
+
+input[type=radio]:checked + label{
+    font-size: 24px;
+    margin:10px;
+    padding: 0px 38px 2px 38px;
+    border-radius: 26px;
+    background-color: #FFDDEF;
+    border-color: #ffc3e4;
+    border-style: solid;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    font-family: 'Patrick Hand SC';
+
 }

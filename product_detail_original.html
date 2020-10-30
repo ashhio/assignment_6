@@ -21,9 +21,9 @@
 
 <main class = "main-margin">
     <p>Order > <strong>Original</strong></p>
-    <div class="container product-detail">
-        <img class = "product-detail-img" src="img/original_lg_image.png" alt="original cinnamon roll">
-        <div class="product-detail-txt">
+    <div class="container product-detail flex">
+        <img class = "product-detail-img flex" src="img/original_lg_image.png" alt="original cinnamon roll">
+        <div class="product-detail-txt flex col">
             <h2>original - $4.00</h2>
             <p>Enjoy our famous mouth-watering cinnamon roll! Hot and fresh from the oven every 
                 morning with just the perfect touch of spice and sweetness to start your day, or 
@@ -45,6 +45,7 @@
                 
                 <label for="glaze">Glaze</label>
                 <br>
+                <div class="flex row">
                 <input type="radio" id="none" name="glaze" value="none" checked="checked">
                 <label for="none">None</label><br>
                 <input type="radio" id="sugar" name="glaze" value="sugar">
@@ -53,6 +54,7 @@
                 <label for="vanilla">Vanilla</label><br>
                 <input type="radio" id="chocolate" name="glaze" value="chocolate">
                 <label for="chocolate">Chocolate</label><br>
+            </div>
             
            
                 <!--
@@ -70,7 +72,7 @@
             </form>
         </div>
     </div>
-    <p class="ingredients">Ingredients <br>Flour, sugar, salt, yeast, milk, water, butter, eggs, cinnamon, vanilla </p>
+    <p class="ingredients flex">Ingredients <br>Flour, sugar, salt, yeast, milk, water, butter, eggs, cinnamon, vanilla </p>
 </main>
 
 <footer>
