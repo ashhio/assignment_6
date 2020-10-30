@@ -15,7 +15,7 @@
         location
         about
         contact
-        <span id="cart"><img src="img/shoppingcart_icon.png">cart</span>
+        <span id="cart"><img src="img/shoppingcart_icon.png">cart(<span id="cart-number">0</span>)</span> 
     </nav>
 </header>
 
@@ -31,26 +31,43 @@
             <br>
             <br>
             <!-- Select options-->
-            <label for="quantity">Quantity</label>
-            <select name="quantity" id="quantity">
-                <option value="1">1</option>
-                <option value="3">3</option>
-                <option value="6">6</option>
-                <option value="12">12</option>
-            </select>
-            <br>
-            <br>
-            <br>
-            <label for="glaze">Glaze</label>
-            <br>
-            <button class="reg-button deactivated">none</button>
-            <button class="reg-button deactivated">sugar</button>
-            <button class="reg-button deactivated">vanilla</button>
-            <button class="reg-button deactivated">chocolate</button>
-            <br>
-            <br>
-            <br>
-            <button class="big-button">add to cart</button>
+            <form id="form">
+                <label for="quantity">Quantity</label>
+                <select name="quantity" id="quantity">
+                    <option value="1">1</option>
+                    <option value="3">3</option>
+                    <option value="6">6</option>
+                    <option value="12">12</option>
+                </select>
+                <br>
+                <br>
+                <br>
+                
+                <label for="glaze">Glaze</label>
+                <br>
+                <input type="radio" id="none" name="glaze" value="none" checked="checked">
+                <label for="none">None</label><br>
+                <input type="radio" id="sugar" name="glaze" value="sugar">
+                <label for="sugar">Sugar</label><br>
+                <input type="radio" id="vanilla" name="glaze" value="vanilla">
+                <label for="vanilla">Vanilla</label><br>
+                <input type="radio" id="chocolate" name="glaze" value="chocolate">
+                <label for="chocolate">Chocolate</label><br>
+            
+           
+                <!--
+                <button class="reg-button deactivated">none</button>
+                <button class="reg-button deactivated">sugar</button>
+                <button class="reg-button deactivated">vanilla</button>
+                <button class="reg-button deactivated">chocolate</button>
+                -->
+                <br>
+                <br>
+                <br>
+                <!--<button class="big-button add-to-cart">add to cart</button> -->
+                <input type="button" id="addToCartButton" class="big-button add-to-cart" value="add to cart" onclick="addToCart()">
+                <!--<input type="submit">-->
+            </form>
         </div>
     </div>
     <p class="ingredients">Ingredients <br>Flour, sugar, salt, yeast, milk, water, butter, eggs, cinnamon, vanilla </p>
@@ -76,5 +93,6 @@
         (c)Bun Bun Bake Shop 2020</p>
     </nav>
 </footer>
+<script src="main.js" type="text/javascript"></script>
 </body>
 </html>

@@ -199,3 +199,21 @@ footer{
     background-color: #EBEBEB;
     border-color: #D6D6D6;
 }
+
+.f-container-center{
+    display: flex;
+    justify-content: center;
+   
+}
+
+.box{
+    justify-content: center;
+    background-color: #F0F0F0;
+   align-content:center;
+   text-align: center;
+   
+}
+
+.p-margin{
+    margin: 10%;
+}
